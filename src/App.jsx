@@ -4,14 +4,15 @@ import bg from "./assets/bg5.jpg";
 import NavBar from "./pages/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import { Projects } from "./pages/Projects";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
     <Router>
       <div
         className="bg-cover bg-center h-screen"
-        style={{ backgroundImage: `url(${bg})` }}
+        //style={{ backgroundImage: `url(${bg})` }}
+        style={{ backgroundColor: "black" }}
       >
         <NavBar />
         <Routes>
