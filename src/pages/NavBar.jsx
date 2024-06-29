@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <div className="h-[3.5rem] flex flex-col md:flex-row md:items-center justify-center">
+    <div className="h-[3.5rem] flex flex-col md:flex-row md:items-center m-2 p-2 justify-center">
       <ul className="flex flex-col md:flex-row md:items-center md:justify-end text-md uppercase font-bold">
         <li className="mr-8 md:mr-12">
           <Link

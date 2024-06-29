@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import bg from "./assets/bg5.jpg";
+import bg from "./assets/bb4.jpg";
 import NavBar from "./pages/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -11,8 +11,8 @@ function App() {
     <Router>
       <div
         className="bg-cover bg-center h-screen"
-        //style={{ backgroundImage: `url(${bg})` }}
-        style={{ backgroundColor: "black" }}
+        style={{ backgroundImage: `url(${bg})` }}
+        //style={{ backgroundColor: "black" }}
       >
         <NavBar />
         <Routes>
