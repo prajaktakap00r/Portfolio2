@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
 import SkillBar from "./SkillBar";
 import profileImage from "../assets/profile2.svg";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -16,6 +16,41 @@ const Home = () => {
     { skill: "Express.js", level: 60 },
     { skill: "MongoDB", level: 60 },
   ];
+  const [formData, setFormData] = useState({
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_l83upe4",
+        "template_km81sbl",
+        formData,
+        "CyO8vrIghhChWll48"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send the message, please try again.");
+        }
+      );
+
+    setFormData({ email: "", message: "" });
+  };
 
   return (
     <div className="m-2 p-2">
@@ -60,7 +95,7 @@ const Home = () => {
 
         {/* About Section */}
         <section id="about" className=" p-6 ">
-          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300 underline">
+          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300">
             My Tech Stack
           </h2>
 
@@ -73,19 +108,65 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Projects Section */}
+        {/* Contact Section */}
         <section id="projects" className=" p-6 rounded-lg shadow-lg">
-          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300">
-            Social OutReach
-          </h2>
-          <div class="min-h-full max-w-full mx-auto py-6 sm:px-6 lg:px-8"></div>
+          <div className="container mx-auto py-12 px-4">
+            <h2 className="text-4xl font-bold text-center mb-8 text-purple-300">
+              Contact Me
+            </h2>
+            <form
+              className="bg-black/80 p-8 rounded-lg shadow-lg mx-auto max-w-lg border-r-2 border-l-2 border-purple-500"
+              onSubmit={handleSubmit}
+            >
+              <div className="mb-6">
+                <label
+                  htmlFor="email"
+                  className="block text-white text-sm font-bold mb-2"
+                >
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="w-full px-3 py-2 rounded-md text-black"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="mb-6">
+                <label
+                  htmlFor="message"
+                  className="block text-white text-sm font-bold mb-2"
+                >
+                  Your Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  className="w-full px-3 py-2 rounded-md text-black"
+                  rows="6"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                ></textarea>
+              </div>
+              <div className="text-center">
+                <button
+                  type="submit"
+                  className="bg-rose-400 text-white px-6 py-2 rounded-md hover:bg-rose-500 transition duration-300"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
         </section>
 
         {/* Connect Section */}
         <section id="connect" className=" p-6 rounded-lg shadow-lg">
-          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300 ">
-            Let's Connect
-          </h2>
+          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300 "></h2>
           <div className="flex justify-center space-x-8">
             <a
               href="https://github.com/prajaktakap00r"
