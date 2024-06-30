@@ -10,7 +10,7 @@ const SkillBar = ({ skill, level }) => {
       </div>
       <div className="w-full bg-gray-300 rounded-md h-2 shadow-inner">
         <div
-          className="bg-gradient-to-r from-rose-300 to-rose-300 h-2 rounded-md shadow-lg"
+          className="bg-gradient-to-r from-rose-400 to-rose-400 h-2 rounded-md shadow-lg"
           style={{ width: `${level}%` }}
         ></div>
       </div>

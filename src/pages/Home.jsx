@@ -42,7 +42,7 @@ const Home = () => {
                 href="https://drive.google.com/file/d/11aIPOaH5wYOGUc58ZABeVSxrjITtYz-G/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-rose-400 text-white rounded-md px-6 py-2 hover:bg-rose-500 transition duration-300 shadow-md border-b-2 border-rose-200 hover:shadow-rose-200"
+                className="bg-rose-500 text-white rounded-md px-6 py-2 hover:bg-rose-500 transition duration-300 shadow-md border-b-2 border-rose-200 hover:shadow-rose-200"
               >
                 Resume
               </a>
@@ -50,7 +50,7 @@ const Home = () => {
                 href="https://www.youtube.com/@3rd_tier-coder"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-rose-400 text-white rounded-md px-6 py-2 hover:bg-rose-500 transition duration-300 shadow-md border-b-2 border-rose-200 hover:shadow-rose-200"
+                className="bg-rose-500 text-white rounded-md px-6 py-2 hover:bg-rose-500 transition duration-300 shadow-md border-b-2 border-rose-200 hover:shadow-rose-200"
               >
                 Youtube
               </a>
@@ -60,7 +60,7 @@ const Home = () => {
 
         {/* About Section */}
         <section id="about" className=" p-6 ">
-          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300">
+          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300 underline">
             My Tech Stack
           </h2>
 
@@ -76,11 +76,9 @@ const Home = () => {
         {/* Projects Section */}
         <section id="projects" className=" p-6 rounded-lg shadow-lg">
           <h2 className="text-4xl font-bold text-center mb-4 text-purple-300">
-            Coding Stats
+            Social OutReach
           </h2>
-          <div class="min-h-full max-w-full mx-auto py-6 sm:px-6 lg:px-8">
-            Hi
-          </div>
+          <div class="min-h-full max-w-full mx-auto py-6 sm:px-6 lg:px-8"></div>
         </section>
 
         {/* Connect Section */}
@@ -90,7 +88,7 @@ const Home = () => {
           </h2>
           <div className="flex justify-center space-x-8">
             <a
-              href="https://twitter.com/kapoor_prajakta"
+              href="https://github.com/prajaktakap00r"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white rounded-md p-3 border-r-2 border-l-2 border-rose-400 shadow-lg hover:shadow-pink-200 transition duration-300"
@@ -98,7 +96,7 @@ const Home = () => {
               <GitHubIcon />
             </a>
             <a
-              href="https://twitter.com/kapoor_prajakta"
+              href="https://www.linkedin.com/in/prajaktakapoor/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white rounded-md p-3 border-r-2 border-l-2 border-rose-400 shadow-lg hover:shadow-pink-200 transition duration-300"

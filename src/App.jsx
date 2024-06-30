@@ -4,17 +4,21 @@ import NavBar from "./pages/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import bg from "./assets/bb2.jpg";
 
 function App() {
   return (
     <Router>
       <div
         className="bg-cover bg-center h-200vh"
-        /* style={{
-          backgroundImage:
-            "url('https://media.istockphoto.com/id/1191607201/photo/black-gray-satin-dark-fabric-texture-luxurious-shiny-that-is-abstract-silk-cloth-background.jpg?s=612x612&w=0&k=20&c=RQbgXSbaCWC6bCwM4aZyRBozca2Wtf2o1Y7Fbj7FYsQ=')",
+        /*  style={{
+          backgroundImage: `url(${bg})`,
         }} */
-        style={{ backgroundColor: "black" }}
+        style={{
+          backgroundImage:
+            "url('https://1.bp.blogspot.com/-YOIuzv4Ey2M/YQL27kQNBVI/AAAAAAAAjDE/FwnVrDEAFQEke8Zeu9RMSFmyZvu3tPBQgCLcBGAsYHQ/s2535/AMOLED-HD.png')",
+        }}
+        //style={{ backgroundColor: "black" }}
       >
         <NavBar />
         <Routes>

@@ -1,11 +1,11 @@
 import React from "react";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import project1 from "../assets/bg1.svg";
-import project2 from "../assets/bg1.svg";
-import project3 from "../assets/bg3.svg";
-import project4 from "../assets/bg4.svg";
-import project5 from "../assets/bg1.jpg";
-import project6 from "../assets/bg1.jpg";
+import project1 from "../assets/project1.svg";
+import project2 from "../assets/project2.svg";
+import project3 from "../assets/project3.svg";
+import project4 from "../assets/project4.svg";
+import project5 from "../assets/project5.svg";
+import project6 from "../assets/project6.svg";
 
 const projects = [
   {
@@ -36,7 +36,7 @@ const projects = [
     id: 4,
     name: "Heart Disease Prediction System",
     description:
-      "Fusce tristique tortor sed tellus vestibulum, sit amet efficitur elit elementum.",
+      "A system that predicts heart disease using machine learning algorithms. This project aims to assist in early diagnosis and better healthcare planning.",
     image: project4,
     link: "https://innovify.onrender.com/",
   },
@@ -44,7 +44,7 @@ const projects = [
     id: 5,
     name: "Wedding Guest Management System",
     description:
-      "Integer vitae enim id elit faucibus vestibulum. Quisque tincidunt augue at magna dapibus, in sagittis magna tincidunt.",
+      "An efficient system to manage wedding guest lists, invitations, and RSVPs. Built with a user-friendly interface for ease of use.",
     image: project5,
     link: "https://innovify.onrender.com/",
   },
@@ -52,7 +52,7 @@ const projects = [
     id: 6,
     name: "Tic Tac Toe",
     description:
-      "Ut eget neque interdum, rutrum nisl ac, commodo lorem. Nulla efficitur, tortor eget venenatis convallis.",
+      "A classic Tic Tac Toe game with a modern twist, built using React. Enjoy the game with a sleek and responsive design.",
     image: project6,
     link: "https://innovify.onrender.com/",
   },
@@ -60,34 +60,35 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="container mx-auto py-12 px-4 ">
-      <h1 className="text-3xl font-bold text-center mb-8 text-white">
-        Our Projects
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="container mx-auto py-12 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-20">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-black shadow-lg rounded-lg overflow-hidden  transform hover:scale-105 transition-transform duration-500 ease-in-out hover:shadow-purple-600  "
+            className="bg-black/80 h-auto border-b-2  border-rose-400 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out hover:shadow-rose-600 flex flex-col"
           >
-            <img
-              src={project.image}
-              alt={project.name}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h2 className="text-lg font-bold mb-2 uppercase text-pink-500 flex flex-row">
-                {project.name}
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-row items-center text-pink-500 hover:text-pink-700"
-                >
-                  <OpenInNewIcon />
-                </a>
-              </h2>
-              <p className="text-white">{project.description} </p>
+            <div className="flex flex-row p-4">
+              <img
+                src={project.image}
+                alt={project.name}
+                className="w-1/3 h-auto object-cover rounded-lg mr-4"
+              />
+              <div className="flex flex-col justify-center">
+                <h2 className="text-lg font-bold mb-2 uppercase italic text-rose-200 flex items-center">
+                  {project.name}
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-rose-300 hover:text-pink-700 ml-2"
+                  >
+                    <OpenInNewIcon />
+                  </a>
+                </h2>
+                <p className="text-white italic text-sm">
+                  {project.description}
+                </p>
+              </div>
             </div>
           </div>
         ))}
