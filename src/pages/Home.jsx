@@ -7,6 +7,16 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Home = () => {
+  const skills = [
+    { skill: "C++", level: 90 },
+    { skill: "JavaScript", level: 80 },
+    { skill: "React", level: 75 },
+    { skill: "Tailwind CSS", level: 70 },
+    { skill: "Node.js", level: 65 },
+    { skill: "Express.js", level: 60 },
+    { skill: "MongoDB", level: 60 },
+  ];
+
   return (
     <div className="m-2 p-2">
       <div className="text-white p-1 ">
@@ -28,18 +38,22 @@ const Home = () => {
               Crafting Digital Experiences With Passion And Precision.
             </p>
             <div className="flex space-x-4">
-              <Link
-                to="https://drive.google.com/file/d/11aIPOaH5wYOGUc58ZABeVSxrjITtYz-G/view?usp=sharing"
+              <a
+                href="https://drive.google.com/file/d/11aIPOaH5wYOGUc58ZABeVSxrjITtYz-G/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-rose-400 text-white rounded-md px-6 py-2 hover:bg-rose-500 transition duration-300 shadow-md border-b-2 border-rose-200 hover:shadow-rose-200"
               >
                 Resume
-              </Link>
-              <Link
-                to="https://www.youtube.com/@3rd_tier-coder"
+              </a>
+              <a
+                href="https://www.youtube.com/@3rd_tier-coder"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-rose-400 text-white rounded-md px-6 py-2 hover:bg-rose-500 transition duration-300 shadow-md border-b-2 border-rose-200 hover:shadow-rose-200"
               >
-                YouTube
-              </Link>
+                Youtube
+              </a>
             </div>
           </div>
         </section>
@@ -47,7 +61,7 @@ const Home = () => {
         {/* About Section */}
         <section id="about" className=" p-6 ">
           <h2 className="text-4xl font-bold text-center mb-4 text-purple-300">
-            Skills
+            My Tech Stack
           </h2>
 
           <div className="w-full px-4 mt-10">
@@ -61,40 +75,44 @@ const Home = () => {
 
         {/* Projects Section */}
         <section id="projects" className=" p-6 rounded-lg shadow-lg">
-          <h2 className="text-4xl font-bold text-center mb-4">Projects</h2>
-          <p className="text-md leading-relaxed">
-            Over the years, I have worked on numerous projects that showcase my
-            versatility and creativity. Here are some highlights:
-          </p>
-          <ul className="list-disc list-inside space-y-2 mt-4">
-            <li>Project A: Description of project A.</li>
-            <li>Project B: Description of project B.</li>
-            <li>Project C: Description of project C.</li>
-          </ul>
+          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300">
+            Coding Stats
+          </h2>
+          <div class="min-h-full max-w-full mx-auto py-6 sm:px-6 lg:px-8">
+            Hi
+          </div>
         </section>
 
         {/* Connect Section */}
         <section id="connect" className=" p-6 rounded-lg shadow-lg">
-          <h2 className="text-4xl font-bold text-center mb-4">Let's Connect</h2>
+          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300 ">
+            Let's Connect
+          </h2>
           <div className="flex justify-center space-x-8">
-            <Link
-              to="https://github.com/prajaktakap00r"
-              className="text-white rounded-full p-3 border-2 border-pink-400 shadow-lg hover:shadow-pink-200 transition duration-300"
+            <a
+              href="https://twitter.com/kapoor_prajakta"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white rounded-md p-3 border-r-2 border-l-2 border-rose-400 shadow-lg hover:shadow-pink-200 transition duration-300"
             >
               <GitHubIcon />
-            </Link>
-            <Link
-              to="https://www.linkedin.com/in/prajaktakapoor/"
-              className="text-white rounded-full p-3 border-2 border-pink-400 shadow-lg hover:shadow-pink-200 transition duration-300"
+            </a>
+            <a
+              href="https://twitter.com/kapoor_prajakta"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white rounded-md p-3 border-r-2 border-l-2 border-rose-400 shadow-lg hover:shadow-pink-200 transition duration-300"
             >
               <LinkedInIcon />
-            </Link>
-            <Link
-              to="https://twitter.com/kapoor_prajakta"
-              className="text-white rounded-full p-3 border-2 border-pink-400 shadow-lg hover:shadow-pink-200 transition duration-300"
+            </a>
+            <a
+              href="https://twitter.com/kapoor_prajakta"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white rounded-md p-3 border-r-2 border-l-2 border-rose-400 shadow-lg hover:shadow-pink-200 transition duration-300"
             >
               <TwitterIcon />
-            </Link>
+            </a>
           </div>
         </section>
       </div>
@@ -103,10 +121,3 @@ const Home = () => {
 };
 
 export default Home;
-const skills = [
-  { skill: "JavaScript", level: 80 },
-  { skill: "React", level: 75 },
-  { skill: "Tailwind CSS", level: 70 },
-  { skill: "Node.js", level: 65 },
-  { skill: "Express.js", level: 60 },
-];
