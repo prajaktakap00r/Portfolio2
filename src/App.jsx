@@ -4,7 +4,6 @@ import NavBar from "./pages/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import bg from "./assets/bb2.jpg";
 
 function App() {
   return (

@@ -77,7 +77,7 @@ const Home = () => {
                 href="https://drive.google.com/file/d/11aIPOaH5wYOGUc58ZABeVSxrjITtYz-G/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-rose-500 text-white rounded-md px-6 py-2 hover:bg-rose-500 transition duration-300 shadow-md border-b-2 border-rose-200 hover:shadow-rose-200"
+                className="bg-rose-500 text-white rounded-md px-6 py-2 hover:bg-purple-300 transition duration-300 shadow-md border-b-2 border-rose-200 hover:shadow-rose-200"
               >
                 Resume
               </a>
@@ -85,7 +85,7 @@ const Home = () => {
                 href="https://www.youtube.com/@3rd_tier-coder"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-rose-500 text-white rounded-md px-6 py-2 hover:bg-rose-500 transition duration-300 shadow-md border-b-2 border-rose-200 hover:shadow-rose-200"
+                className="bg-rose-500 text-white rounded-md px-6 py-2 hover:bg-purple-300 transition duration-300 shadow-md border-b-2 border-rose-200 hover:shadow-rose-200"
               >
                 Youtube
               </a>
