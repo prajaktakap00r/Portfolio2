@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import SkillBar from "./SkillBar";
-import profileImage from "../assets/profile2.svg";
+import profileImage from "../../src/assets/profile2.svg";
 import XIcon from "@mui/icons-material/X";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
