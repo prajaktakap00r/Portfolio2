@@ -62,7 +62,7 @@ const Home = () => {
           className="flex flex-col md:flex-row items-center justify-center h-[35rem]"
         >
           <img
-            src={profileImage}
+            src="../assets/profile2.svg"
             alt="Profile"
             className="rounded-md p-2 w-62 h-60 mb-4   border-white"
           />
