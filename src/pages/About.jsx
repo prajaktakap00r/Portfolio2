@@ -78,24 +78,24 @@ function About() {
         {/* Achievements Section */}
         <section id="hobbies" className="p-6">
           <h2 className="text-4xl font-bold text-center mb-4 text-purple-300">
-            Hobbies
+            Achievements
           </h2>
 
           <div className="flex flex-row justify-between gap-10">
             <div className="mx-auto px-4 mt-10 border-2 rounded-md border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
               <div className="text-white p-6 ">
-                <h4 className="mt-2">Add your hobbies here...</h4>
+                <h4 className="mt-2">Gold Medalist in Athletics</h4>
               </div>
             </div>
 
             <div className="mx-auto px-4 mt-10 border-2 rounded-md border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
               <div className="text-white p-6">
-                <h4 className="mt-2">Add your hobbies here...</h4>
+                <h4 className="mt-2">School Topper in 10th and 12th</h4>
               </div>
             </div>
             <div className="mx-auto px-4 mt-10 border-2 rounded-md border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
               <div className="text-white p-6">
-                <h4 className="mt-2">Add your hobbies here...</h4>
+                <h4 className="mt-2">Solved 400+ Problems on Leetcode</h4>
               </div>
             </div>
           </div>
