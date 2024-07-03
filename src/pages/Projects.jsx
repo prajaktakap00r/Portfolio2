@@ -50,7 +50,7 @@ const projects = [
     description:
       "An efficient system to manage wedding guest lists, invitations, and RSVPs. Built with a user-friendly interface for ease of use.",
     image: project5,
-    link: "https://github.com/prajaktakap00r/Project1/tree/main/Project-1",
+    link: "https://prajaktakap00r.github.io/Project1/",
   },
   {
     id: 6,
