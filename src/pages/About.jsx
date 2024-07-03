@@ -46,8 +46,8 @@ function About() {
             </div>
           </div>
 
-          <div className="mx-auto px-4 mt-10 border-2 bg-pink-300/20 rounded-md border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out">
-            <div className="text-white p-6">
+          <div className="mx-auto px-4 mt-10 border-2 bg-pink-300/20 rounded-md w-full border-rose-300 shadow-lg hover:shadow-rose-300 max-w-4xl overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out">
+            <div className="text-white p-6  ">
               <div className="flex flex-col md:flex-row justify-between items-center">
                 <h1 className="text-xl font-bold uppercase text-rose-300">
                   Kendriya Vidyalaya
@@ -76,26 +76,60 @@ function About() {
         </section>
 
         {/* Achievements Section */}
-        <section id="hobbies" className="p-6">
+        <section id="hobbies" className="p-36 justify-center align-middle ">
           <h2 className="text-4xl font-bold text-center mb-4 text-purple-300">
             Achievements
           </h2>
 
-          <div className="flex flex-row justify-between gap-10">
-            <div className="mx-auto px-4 mt-10 border-2 rounded-md border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
+          <div className="flex flex-row justify-between gap-10  w-[70rem] h-[8rem] ">
+            <div className="mx-auto px-4 mt-10 border-2  bg-pink-300/20  rounded-es-3xl rounded-tr-3xl  border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
               <div className="text-white p-6 ">
-                <h4 className="mt-2">Gold Medalist in Athletics</h4>
+                <h4 className="m-2">Gold Medalist in Athletics</h4>
               </div>
             </div>
 
-            <div className="mx-auto px-4 mt-10 border-2 rounded-md border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
+            <div className="mx-auto px-4 mt-10 border-2  bg-pink-300/20  rounded-es-3xl rounded-tr-3xl border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
               <div className="text-white p-6">
                 <h4 className="mt-2">School Topper in 10th and 12th</h4>
               </div>
             </div>
-            <div className="mx-auto px-4 mt-10 border-2 rounded-md border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
+            <div className="mx-auto px-4 mt-10 border-2   bg-pink-300/20 rounded-es-3xl rounded-tr-3xl border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
               <div className="text-white p-6">
                 <h4 className="mt-2">Solved 400+ Problems on Leetcode</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Certification Section */}
+        <section id="hobbies" className="p-6">
+          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300">
+            Certification
+          </h2>
+
+          <div className="flex flex-row justify-between gap-10">
+            <div className="mx-auto px-4 mt-10 border-2 rounded-md  bg-pink-300/20  border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
+              <div className="text-white p-6 ">
+                <h4 className="mt-2">MERN Stack Development, Udemy 2024</h4>
+              </div>
+            </div>
+
+            <div className="mx-auto px-4 mt-10 border-2 rounded-md   bg-pink-300/20  border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
+              <div className="text-white p-6">
+                <h4 className="mt-2">
+                  Participated in Electrothon, NIT Hamirpur, 2024
+                </h4>
+              </div>
+            </div>
+            <div className="mx-auto px-4 mt-10 border-2 rounded-md   bg-pink-300/20  border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
+              <div className="text-white p-6">
+                <h4 className="mt-2">
+                  Complete Machine Learning and Data Science Course, Udemy 2023
+                </h4>
+              </div>
+            </div>
+            <div className="mx-auto px-4 mt-10 border-2 rounded-md   bg-pink-300/20  border-rose-300 shadow-lg hover:shadow-rose-300 w-full max-w-4xl">
+              <div className="text-white p-6">
+                <h4 className="mt-2">Complete DSA by Abdul Bari, Udemy 2023</h4>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@
     min-height: 200vh;
     width: 100%;
     overflow: auto;
-    background: url('https://1.bp.blogspot.com/-YOIuzv4Ey2M/YQL27kQNBVI/AAAAAAAAjDE/FwnVrDEAFQEke8Zeu9RMSFmyZvu3tPBQgCLcBGAsYHQ/s2535/AMOLED-HD.png');
+    background: url('/bg.png');
     background-size: cover;
     background-attachment: fixed;
   }
