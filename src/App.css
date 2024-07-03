@@ -9,7 +9,7 @@
     min-height: 200vh;
     width: 100%;
     overflow: auto;
-    background: url('/bg.png');
+    background: url('./bg.png');
     background-size: cover;
     background-attachment: fixed;
   }
