@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import SkillBar from "./SkillBar";
-import profileImage from "../../src/assets/profile2.svg";
+import profileImage from "/assets/profile2.svg";
 import XIcon from "@mui/icons-material/X";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -62,7 +62,7 @@ const Home = () => {
           className="flex flex-col md:flex-row items-center justify-center h-[35rem]"
         >
           <img
-            src="../assets/profile2.svg"
+            src="/assets/profile2.svg"
             alt="Profile"
             className="rounded-md p-2 w-62 h-60 mb-4   border-white"
           />
