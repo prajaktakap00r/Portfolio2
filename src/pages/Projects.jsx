@@ -26,7 +26,7 @@ const projects = [
     description:
       "A project management system where users can add, edit, and remove projects. Users can select projects from a sidebar to add tasks and delete them after completion. This system enhances productivity by organizing project workflows efficiently.",
     image: project2,
-    link: "https://github.com/prajaktakap00r/ProjectManagementSystem",
+    link: "https://prajaktakap00r.github.io/ProjectManagementSystem/",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const projects = [
     description:
       "My portfolio, built with Tailwind CSS and React, showcases my projects, provides detailed information about me, and offers ways to connect with me. You can also access my YouTube channel and download my resume. Explore to learn more about my work and get in touch!",
     image: project3,
-    link: "https://github.com/prajaktakap00r/Portfolio2",
+    link: "https://prajaktakap00r.github.io/Portfolio2/",
   },
   {
     id: 4,
