@@ -7,7 +7,7 @@ export default function NavBar() {
       <ul className="flex flex-col m-15 md:flex-row md:items-center md:justify-end text-md uppercase font-bold">
         <li className="mr-8 md:mr-12">
           <Link
-            to="/"
+            to="/Portfolio2"
             className="block text-white rounded-md p-2 border-rose-400 border-b-2 shadow-lg  hover:shadow-rose-300"
           >
             Home
