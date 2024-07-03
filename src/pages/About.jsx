@@ -75,7 +75,7 @@ function About() {
           </div>
         </section>
 
-        {/* Hobbies Section */}
+        {/* Achievements Section */}
         <section id="hobbies" className="p-6">
           <h2 className="text-4xl font-bold text-center mb-4 text-purple-300">
             Hobbies

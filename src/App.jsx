@@ -4,22 +4,26 @@ import NavBar from "./pages/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import "./App.css";
 
 function App() {
   return (
     <Router>
-      <div
-        className="bg-cover bg-center h-200vh"
-        /*  style={{
-          backgroundImage: `url(${bg})`,
-        }} */
-        style={{
-          backgroundImage:
-            "url('https://1.bp.blogspot.com/-YOIuzv4Ey2M/YQL27kQNBVI/AAAAAAAAjDE/FwnVrDEAFQEke8Zeu9RMSFmyZvu3tPBQgCLcBGAsYHQ/s2535/AMOLED-HD.png')",
-        }}
-        //style={{ backgroundColor: "black" }}
-      >
+      <div className="background">
         <NavBar />
+        <div className="stars">
+          {[...Array(50)].map((_, i) => (
+            <div
+              key={i}
+              className="star"
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                animationDuration: `${Math.random() * 2 + 1}s`,
+              }}
+            ></div>
+          ))}
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
