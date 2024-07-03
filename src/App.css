@@ -15,13 +15,13 @@
   }
   
   .stars {
-    position: fixed; /* Make stars container fixed */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Ensure it covers the viewport height */
+    height: 100vh; 
     pointer-events: none;
-    z-index: 2; /* Ensure stars are above all other content */
+    z-index: 2; 
   }
   
   .star {
@@ -39,12 +39,17 @@
   .star:nth-child(3) { top: 80%; left: 35%; animation-duration: 2.5s; }
   .star:nth-child(4) { top: 30%; left: 45%; animation-duration: 1.8s; }
   .star:nth-child(5) { top: 60%; left: 55%; animation-duration: 2.2s; }
-  /* Add more stars as needed */
+  .star:nth-child(6) { top: 70%; left: 65%; animation-duration: 1.2s; }
+  .star:nth-child(7) { top: 10%; left: 75%; animation-duration: 3.2s; }
+  .star:nth-child(8) { top: 30%; left: 85%; animation-duration: 0.2s; }
+  .star:nth-child(9) { top: 40%; left: 95%; animation-duration: 0.5s; }
+  .star:nth-child(10) { top: 90%; left: 50%; animation-duration: 1.9s; }
+
   
   .contact-container {
     position: relative;
-    z-index: 1; /* Ensure the contact form is below the stars */
-    background: rgba(0, 0, 0, 0.8); /* Add a slightly transparent background if needed */
+    z-index: 1; 
+    background: rgba(0, 0, 0, 0.8); 
     padding: 20px;
     border-radius: 10px;
   }
