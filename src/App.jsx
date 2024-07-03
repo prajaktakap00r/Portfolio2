@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router basename="/portfolio">
+    <Router>
       <div className="background">
         <NavBar />
         <div className="stars">
