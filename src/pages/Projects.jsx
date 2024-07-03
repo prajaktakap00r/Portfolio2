@@ -64,7 +64,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="container mx-auto py-12 px-8">
+    <div className="container mx-auto  px-8 mt-28 overflow-y-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-20">
         {projects.map((project) => (
           <div
@@ -78,7 +78,7 @@ const Projects = () => {
                 className="w-1/3 h-auto object-cover rounded-lg mr-4"
               />
               <div className="flex flex-col justify-center">
-                <h2 className="text-lg font-bold mb-2 uppercase italic text-rose-200 flex items-center">
+                <h2 className="text-lg font-bold uppercase italic text-rose-200 flex items-center">
                   {project.name}
                   <a
                     href={project.link}
@@ -97,8 +97,8 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="text-white m-10 p-20 mb-10">
-        <h1 className="text-3xl text-bold text-center">
+      <div className="text-white m-10 p-20">
+        <h1 className="text-3xl text-bold text-center text-purple-300">
           "Thank you for diving into my world of projects! If you found
           something you like, let's talk. If not, let's create something
           together! Your vision, my code, endless possibilities."
