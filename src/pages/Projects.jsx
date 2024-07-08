@@ -1,15 +1,16 @@
 import React from "react";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import XIcon from "@mui/icons-material/X";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
+
 import project1 from "../assets/project1.svg";
 import project2 from "../assets/project2.svg";
 import project3 from "../assets/project3.svg";
 import project4 from "../assets/project4.svg";
 import project5 from "../assets/project5.svg";
 import project6 from "../assets/project6.svg";
-import XIcon from "@mui/icons-material/X";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
 
 const projects = [
   {
@@ -64,12 +65,12 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="container mx-auto  px-8 mt-28 overflow-y-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-20">
+    <div className="container mx-auto max-w-screen-lg px-8 mt-10 lg:mt-20 overflow-y-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-black/80 h-auto border-b-2  border-rose-400 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out hover:shadow-rose-600 flex flex-col"
+            className="bg-black/80 h-auto border-b-2 border-rose-400 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out hover:shadow-rose-600 flex flex-col"
           >
             <div className="flex flex-row p-4">
               <img
@@ -97,14 +98,14 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="text-white m-10 p-20">
-        <h1 className="text-3xl text-bold text-center text-purple-300">
+      <div className="text-white m-10 p-10">
+        <h1 className="text-3xl font-bold text-center text-purple-300">
           "Thank you for diving into my world of projects! If you found
           something you like, let's talk. If not, let's create something
           together! Your vision, my code, endless possibilities."
         </h1>
-        <section id="connect" className=" p-6 rounded-lg shadow-lg">
-          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300 "></h2>
+        <section id="connect" className="p-6 rounded-lg shadow-lg mt-8">
+          <h2 className="text-4xl font-bold text-center mb-4 text-purple-300"></h2>
           <div className="flex justify-center space-x-8">
             <a
               href="https://github.com/prajaktakap00r"
