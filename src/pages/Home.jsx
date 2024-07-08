@@ -192,7 +192,7 @@ const Home = () => {
               <LinkedInIcon />
             </a>
             <a
-              href="https://twitter.com/kapoor_prajakta"
+              href="https://twitter.com/Ailurophile237"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white rounded-md p-3 border-r-2 border-l-2 border-rose-400 shadow-lg hover:shadow-pink-200 transition duration-300"
